@@ -12,5 +12,5 @@ WORKDIR /app
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /out .
 VOLUME /app/files/
-EXPOSE 8000
+EXPOSE 8080
 ENTRYPOINT ["/app/resp"]
